@@ -1,0 +1,89 @@
+public class FoodService {
+     private String address;
+     public boolean showServices (name:string){
+     Users (var service in services)
+        {
+            if (service.getName() == name) 
+            service.getInfo();
+        }
+     }
+     public boolean addMenu (name:string){}
+     public user users{
+     User.Add(Users);
+     }
+     public cook cooks{
+     Cook.Add(Cooks);
+     }
+}
+public class cook {
+     private string procedure;
+     public boolean addMenu (name:string){}
+     private administrator;
+     private administrator administrators;
+}
+public class administrator{
+     private string procedure;
+     public boolean addService (name:string, price:real){}    
+     public FeedBack reviews[];  
+     private cook cooks;
+}
+public class FeedBack {
+     private User user;
+     string comment;
+    User user;
+    public feedBack(string comment, User user)
+    {
+        this.comment = comment; this.user = user;
+    }
+}
+public class User{
+     protected string fullName;
+     protected string menu;
+     protected string PhoneNumber;
+     protected string emailAddress;
+}
+class User : User
+{
+    string procedure;
+    List<feedBack> reviews;
+    List<Service> product;
+
+    public User(string name, string product) 
+    {
+        this.name = name;
+        this.product = product;
+    }
+
+    public void getInfo()
+    {
+        Console.WriteLine(name, product);
+    }
+    public void AddService(string nameService, double price)
+    {
+        products.Add(new product(nameproduct, price, this));
+        Addproduct(nameproduct, price);
+    }
+
+    public void Feedback(string comment, User user)
+    {
+        reviews.Add(new feedBack(comment, product, user));
+    }
+}
+class Service
+{
+    string name;
+    double price;
+    User user;
+    public Service(string nam, double pric, User user)
+    {
+        name = nam; price = pric;
+    }
+    public string getName()
+    {
+        return name;
+    }
+    public void getInfo()
+    {
+        Console.WriteLine(name, " ", price, " ");
+    }
+}
